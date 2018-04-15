@@ -98,7 +98,7 @@ nav {
     color: #ffffff;
     padding: 0px 15px;
     cursor: pointer;
-    text-shadow: 2px 2px rgb(0, 0, 0, 0.35);
+    text-shadow: 2px 2px #00000059;
 }
 
 .navlistitem:hover {
