@@ -164,12 +164,6 @@ main {
         grid-row: auto;
         border-top: 2px solid #ffc107;
     }
-
-    .navlistitem {
-        height: 60px;
-        display: grid;
-        align-content: center;
-    }
 }
 
 @media screen and (max-width:588px) {
