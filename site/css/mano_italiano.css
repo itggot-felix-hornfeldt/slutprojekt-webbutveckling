@@ -167,6 +167,8 @@ main {
 
     .navlistitem {
         height: 60px;
+        display: grid;
+        align-content: center;
     }
 }
 
