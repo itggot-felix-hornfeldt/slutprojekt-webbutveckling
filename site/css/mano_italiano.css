@@ -164,6 +164,10 @@ main {
         grid-row: auto;
         border-top: 2px solid #ffc107;
     }
+
+    .navlistitem {
+        margin: 10px 0px;
+    }
 }
 
 @media screen and (max-width:588px) {
