@@ -105,6 +105,14 @@ nav {
     color: #ffc107;
 }
 
+/* MAIN ELEMENT CSS PROPERTIES */
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 /* INDEX FILE CSS PROPERTIES */
 
 .indexsitecontainer {
@@ -112,8 +120,40 @@ nav {
     height: auto;
 }
 
-main {
-    background-color: indigo;
+/* INDEX FILE MAIN ELEMENT CSS PROPERTIES */
+
+.indexmaincontainer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    min-height: inherit;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: #1976d2;
+}
+
+.indexmainspecialpricebox {
+    background-color: hotpink;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.indexmainwehowworkherebox {
+    background-color: forestgreen;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.indexmainopentimesbox {
+    background-color: crimson;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.indexmainreviewsbox {
+    background-color: darkturquoise;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
 }
 
 /* MEDIA QUERIES CSS PROPERTIES */
@@ -179,6 +219,35 @@ main {
     .navlistitem {
         float: none;
         padding: 0px;
+    }
+
+    .indexmaincontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background: none;
+    }
+
+    .indexmainspecialpricebox {
+        height: 375.2px;
+        width: 100%;
+    }
+
+    .indexmainwehowworkherebox {
+        height: 250px;
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .indexmainopentimesbox {
+        display: none;
+    }
+
+    .indexmainreviewsbox {
+        height: 500px;
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
     }
 }
 

@@ -1,3 +1,4 @@
+// Function that calculates the minimalheight of the main element
 function mainElementMinHeight() {
     var height = window.innerHeight;
     var width = window.innerWidth;
@@ -8,10 +9,10 @@ function mainElementMinHeight() {
     } else {
         minimalHeight = height - 69;
     }
-    // console.log(minimalHeight);
     mainElement.style.minHeight = '' + minimalHeight + 'px';
 }
 
+// Function that slide the hamburgermenu and it's content
 function manoItalianoDropdown() {
     var navigationElement = document.querySelector('nav');
     var hamburger = document.querySelector('.fa-bars');
