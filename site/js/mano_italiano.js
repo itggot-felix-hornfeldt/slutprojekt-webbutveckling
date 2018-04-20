@@ -20,3 +20,8 @@ function manoItalianoDropdown() {
         hamburger.classList.toggle('hamburgeractive');
     });
 }
+
+// function menuFileMainSlide() {
+//     var menuMainElement = document.querySelector(".menumaincontainerbox");
+//     $(menuMainElement).slideToggle(5000, function(){});
+// }
