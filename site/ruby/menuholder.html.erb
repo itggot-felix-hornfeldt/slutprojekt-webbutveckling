@@ -1,0 +1,34 @@
+<%
+    i = 0
+    # imgClass = []
+    price = [85, 95, 75, 85, 105, 70]
+    pizzaName = ["Hawaii", "Kebab", "Margherita", "Pepperoni", "Prosciutto", "Vegitarian"]
+    # infoInfo = []
+    namei = pizzaName.length
+    while i < namei
+%>
+    <div class="menuitembox">
+        <div class="menuitemimagepricebox">
+            <div class="menuitemimagebox">
+                <%# <div class="menuitemimage"></div> %>
+            </div>
+            <div class="menuitempricebox">
+                <p class="menuitemprice"><%=price[i]%> kr.</p>
+            </div>
+        </div>
+        <div class="menuiteminfobox">
+            <div class="menuiteminfonamebox">
+                <h2 class="menuiteminfoname">Pizza <%=pizzaName[i]%></h2>
+            </div>
+            <div class="menuiteminfoinfobox">
+                <p class="menuiteminfoinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia tempore autem excepturi nihil in dolorem dolorum minima fugit atque perferendis reprehenderit deleniti consequuntur adipisci fuga est quasi, quas inventore.</p>
+            </div>
+            <div class="menuiteminfoaddbox">
+                <button class="menuiteminfoadd">Lägg i kundvagn</button>
+            </div>
+        </div>
+    </div>
+<%
+        i += 1
+    end
+%>
