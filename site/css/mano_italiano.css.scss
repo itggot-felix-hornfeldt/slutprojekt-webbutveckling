@@ -186,6 +186,8 @@ main {
     margin: 0;
 }
 
+/* MENU ITEMS CSS PROPERTIES */
+
 .menuitembox {
     width: 60vw;
     height: 250px;
@@ -244,7 +246,7 @@ main {
 .menuiteminfobox {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-    display: grid;
+    display:  grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     align-content: center;
