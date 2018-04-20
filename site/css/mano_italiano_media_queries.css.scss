@@ -1,0 +1,104 @@
+/* MEDIA QUERIES CSS PROPERTIES */
+
+@media screen and (max-width:1250px) {
+    header {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        grid-column: 2 / 4;
+    }
+}
+
+@media screen and (max-width:880px) {
+    header {
+        grid-template-columns: repeat(5, 1fr);
+        min-height: 67px;
+        height: auto;
+        border-bottom: 2px solid #ffc107;
+    }
+
+    .headerhamburgertogglemenu{
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        align-content: center;
+        justify-content: center;
+        height: 67px;
+    }
+
+    .headerlogobox {
+        grid-column: 2 / 5;
+        justify-content: center;
+    }
+
+    .headerlogotext {
+        font-size: 48px;
+    }
+
+    nav {
+        display: none;
+        height: auto;
+        /* text-align: center; */
+        background-color: #1976d2;
+        width: 100%;
+        grid-column: 1 / 6;
+        grid-row: auto;
+        border-top: 2px solid #ffc107;
+    }
+
+    .navlistitem {
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width:588px) {
+    .headerlogobox {
+        grid-column: 2 / 6;
+        justify-content: left;
+    }
+
+    .navlistitem {
+        float: none;
+        padding: 0px;
+    }
+
+    .indexmaincontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background: none;
+    }
+
+    .indexmainspecialpricebox {
+        height: 375.2px;
+        width: 100%;
+    }
+
+    .indexmainwehowworkherebox {
+        height: 250px;
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .indexmainopentimesbox {
+        display: none;
+    }
+
+    .indexmainreviewsbox {
+        height: 500px;
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .headerlogotext {
+        font-size: 42px;
+    }
+
+    .navlistitem {
+        font-size: 20px;
+    }
+}
