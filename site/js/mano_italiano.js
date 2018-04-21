@@ -21,7 +21,6 @@ function manoItalianoDropdown() {
     });
 }
 
-// function menuFileMainSlide() {
-//     var menuMainElement = document.querySelector(".menumaincontainerbox");
-//     $(menuMainElement).slideToggle(5000, function(){});
-// }
+function addToCartAlert() {
+    alert("You can't order this");
+}
