@@ -247,6 +247,15 @@ main {
     color: #1976d2;
 }
 
+.menuitemprice .lineoverprice {
+    text-decoration: line-through double #1976d2;
+    color: #00000059;
+}
+
+.menuitemprice .specialpriceactiv {
+    color: #ffc107;
+}
+
 .menuiteminfobox {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
