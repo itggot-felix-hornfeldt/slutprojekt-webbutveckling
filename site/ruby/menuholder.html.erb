@@ -1,6 +1,7 @@
 <%
     i = 0
     price = [85, 95, 75, 85, 105, 70]
+    specialPrice = [65, 75,45]
     pizzaName = ["Hawaii", "Kebab", "Margherita", "Pepperoni", "Prosciutto", "Vegitarian"]
     # pizzaName = ["Hawaii"]
     infoInfo = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia tempore autem excepturi nihil in dolorem dolorum minima fugit atque perferendis reprehenderit deleniti consequuntur adipisci fuga est quasi, quas inventore."]
@@ -13,7 +14,17 @@
                 <div class="menuitemimage" id="<%=pizzaName[i]%>bg"></div>
             </div>
             <div class="menuitempricebox">
+            <%
+                if i <= 2
+            %> 
+                <p class="menuitemprice"><a class="lineoverprice"><%=price[i]%> kr.</a><a class="specialpriceactiv"> <%=specialPrice[i]%> kr.</a></p>
+            <%
+                else
+            %>
                 <p class="menuitemprice"><%=price[i]%> kr.</p>
+            <%
+                end
+            %>
             </div>
         </div>
         <div class="menuiteminfobox">
