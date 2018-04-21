@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'Roboto', Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  width: 100%;
+  overflow: auto; }
+
+/* SITECONTAINERS CSS PROPERTIES */
+.indexsitecontainer,
+.manusitecontainer {
+  width: 100%;
+  height: auto; }
+
+/* STANDARD HEADER PROPERTIES */
+header {
+  height: 67px;
+  width: 100%;
+  background-color: #1976d2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr; }
+
+/* HEADER HAMBURGER MENU CSS PROPERTIES */
+.headerhamburgertogglemenu {
+  display: none; }
+
+i.fa-bars {
+  font-size: 32px;
+  border: 2px solid #ffc107;
+  margin: 0;
+  padding: 5px 7px;
+  /* margin-left: 10.5px; */
+  color: #ffffff; }
+
+/* WHEN HAMBURGER MENU IS TOOGLED */
+.hamburgeractive {
+  border-color: #ffffff !important;
+  color: #ffc107 !important; }
+
+/* HEADER LOGO CSS PROPERTIES */
+.headerlogobox {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  /* background-color: indianred; */
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+.headerlogobox a {
+  text-decoration: none; }
+
+.headerlogotext {
+  font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffc107;
+  margin: 0; }
+
+/* NAVIGATION CSS PROPERTIES */
+nav {
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  /* background-color: red; */
+  height: inherit;
+  font-family: 'Bungee', sans-serif; }
+
+.navigationbox {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  height: inherit; }
+
+.navigationlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.navigationlist a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 1s ease-in;
+  color: #ffffff; }
+
+.navlistitem {
+  float: left;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 0px 15px;
+  cursor: pointer;
+  text-shadow: 2px 2px #00000059; }
+
+.navlistitem:hover {
+  color: #ffc107; }
+
+/* MAIN ELEMENT CSS PROPERTIES */
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+/* INDEX FILE CSS PROPERTIES */
+/* INDEX FILE MAIN ELEMENT CSS PROPERTIES */
+.indexmaincontainer {
+  width: 100%;
+  height: auto;
+  display: grid;
+  min-height: inherit;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* background: #1976d2; */
+  /* background-image: url("./../../og_files/charcoal_planks_og.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.indexmainspecialpricebox {
+  /* background-color: hotpink; */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2; }
+
+.indexmainwehowworkherebox {
+  /* background-color: forestgreen; */
+  grid-column: 2 / 4;
+  grid-row: 1 / 2; }
+
+.indexmainopentimesbox {
+  /* background-color: crimson; */
+  grid-column: 1 / 2;
+  grid-row: 2 / 3; }
+
+.indexmainreviewsbox {
+  /* background-color: darkturquoise; */
+  grid-column: 2 / 4;
+  grid-row: 2 / 3; }
+
+/* MENU FILE CSS PROPERTIES */
+/* MENU MAIN ELEMENT CSS PROPERTIES */
+.menumaincontainer {
+  width: 100%;
+  height: auto;
+  min-height: inherit;
+  /* background-color: #ffc107; */
+  /* background: linear-gradient(#ffc107, #ffffff); */ }
+
+.menumaincontainerbox {
+  display: grid;
+  /* align-content: center; */
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  min-height: inherit;
+  margin: 0; }
+
+/* MENU ITEMS CSS PROPERTIES */
+.menuitembox {
+  width: 60vw;
+  height: 250px;
+  background-color: #f1f1f1;
+  box-shadow: 5px 5px 10px #00000059;
+  display: grid;
+  margin: 50px 0px;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr); }
+
+.menuitemimagepricebox {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  border-right: 2px solid #00000059; }
+
+.menuitemimagebox {
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  /* background-color: #1976d2; */
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+.menuitemimage {
+  /* background: #ffffff; */
+  max-width: 200px;
+  max-height: 200px;
+  width: 200px;
+  height: 200px;
+  background-image: url("./../img/margherita.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.menuitempricebox {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  justify-content: center; }
+
+.menuitemprice {
+  margin: 0;
+  font-family: 'Bungee', 'Open sans', sans-serif;
+  color: #1976d2; }
+
+.menuiteminfobox {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  align-content: center;
+  justify-content: center; }
+
+.menuiteminfonamebox {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center; }
+
+.menuiteminfoname {
+  margin: 0;
+  color: #1976d2;
+  font-style: italic;
+  font-size: 32px; }
+
+.menuiteminfoinfobox {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  display: grid;
+  justify-content: center;
+  align-content: center; }
+
+.menuiteminfoinfo {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  /* color: #000000; */
+  font-size: 16px;
+  margin: 0px 15px; }
+
+.menuiteminfoaddbox {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+.menuiteminfoadd {
+  background-color: #1976d2;
+  padding: 10px 50px;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 20px; }
+
+.menuiteminfoadd:hover {
+  color: #ffc107; }
+
+/* MEDIA QUERIES CSS PROPERTIES */
+@media screen and (max-width: 1250px) {
+  header {
+    grid-template-columns: repeat(3, 1fr); }
+
+  nav {
+    grid-column: 2 / 4; } }
+@media screen and (max-width: 880px) {
+  header {
+    grid-template-columns: repeat(5, 1fr);
+    min-height: 67px;
+    height: auto;
+    border-bottom: 2px solid #ffc107; }
+
+  .headerhamburgertogglemenu {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-content: center;
+    justify-content: center;
+    height: 67px; }
+
+  .headerlogobox {
+    grid-column: 2 / 5;
+    justify-content: center; }
+
+  .headerlogotext {
+    font-size: 48px; }
+
+  nav {
+    display: none;
+    height: auto;
+    /* text-align: center; */
+    background-color: #1976d2;
+    width: 100%;
+    grid-column: 1 / 6;
+    grid-row: auto;
+    border-top: 2px solid #ffc107; }
+
+  .navlistitem {
+    margin: 10px 0px; } }
+@media screen and (max-width: 588px) {
+  /* HEADER MOBILE QUERIE */
+  .headerlogobox {
+    grid-column: 2 / 6;
+    justify-content: left; }
+
+  .navlistitem {
+    float: none;
+    padding: 0px; }
+
+  /* INDEX MOBILE QUERIE */
+  .indexmaincontainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background: none; }
+
+  .indexmainspecialpricebox {
+    height: 375.2px;
+    width: 100%; }
+
+  .indexmainwehowworkherebox {
+    height: 250px;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+
+  .indexmainopentimesbox {
+    display: none; }
+
+  .indexmainreviewsbox {
+    height: 500px;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; }
+
+  /* MENU ITEM BOX MOBILE QUERIE */
+  .menuitembox {
+    margin: 15px 0px;
+    width: 90vw;
+    height: 85vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr; }
+
+  .menuitemimagepricebox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border-right: 0;
+    border-bottom: 2px solid #00000059;
+    grid-template-rows: repeat(5, 1fr); }
+
+  .menuitemimagebox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5; }
+
+  .menuitempricebox {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6; }
+
+  .menuitemprice {
+    font-size: 22px; }
+
+  .menuiteminfobox {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5; }
+
+  .menuiteminfoinfo {
+    font-size: 14px; } }
+@media screen and (max-width: 370px) {
+  .headerlogotext {
+    font-size: 42px; }
+
+  .navlistitem {
+    font-size: 20px; } }
