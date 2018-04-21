@@ -223,10 +223,11 @@ main {
     max-height: 200px;
     width: 200px;
     height: 200px;
-    background-image: url("./../img/margherita.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@import "mano_italiano_pizza_bgs.css.scss";
 
 .menuitempricebox {
     grid-column: 1 / 2;
