@@ -217,6 +217,8 @@ main {
     justify-content: center;
 }
 
+@keyframes pizzaRotate {100%{transform: rotate(360deg)};}
+
 .menuitemimage {
     /* background: #ffffff; */
     max-width: 200px;
@@ -225,6 +227,7 @@ main {
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: pizzaRotate 5s linear infinite;
 }
 
 @import "mano_italiano_pizza_bgs.css.scss";
