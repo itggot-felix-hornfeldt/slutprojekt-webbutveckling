@@ -22,5 +22,5 @@ function manoItalianoDropdown() {
 }
 
 function addToCartAlert() {
-    alert("You can't order this");
+    alert("Du kan ej beställa denna produkt just nu. Försök igen senare.");
 }
