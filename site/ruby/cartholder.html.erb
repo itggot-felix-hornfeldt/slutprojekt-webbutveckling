@@ -41,11 +41,11 @@
             <%
                 if i < 1
             %>
-                <p class="cartitemtotal">Totalt: <%=quantity[i] * specialPrice[i]%> kr.</p>
+                <p class="cartitemtotal">Total: <%=quantity[i] * specialPrice[i]%> kr.</p>
             <%
                 else
             %>
-                <p class="cartitemtotal">Totalt: <%=quantity[i] * price[i]%> kr.</p>
+                <p class="cartitemtotal">Total: <%=quantity[i] * price[i]%> kr.</p>
             <%
                 end
             %>
@@ -58,3 +58,26 @@
         i += 1
     end
 %>
+<%
+    z = 0
+    grand = 0
+    while z < namei
+        if z < 1
+            grand = grand + (specialPrice[z] * quantity[z])
+        else 
+            grand = grand + (price[z] * quantity[z])
+        end
+        z += 1
+    end
+%>
+
+<div class="cartfinalcontainer">
+    <div class="cartfinalbox">
+        <div class="cartfinalgrandbox">
+            <p class="cartfinalgrand">Grand Total: <%=grand%> kr.</p>
+        </div>
+        <div class="cartfinaltoorderbox">
+            <button class="cartfinaltoorder">Till Beställning</button>
+        </div>
+    </div>
+</div>

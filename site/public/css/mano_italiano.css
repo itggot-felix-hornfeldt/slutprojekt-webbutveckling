@@ -29,7 +29,6 @@ i.fa-bars {
   border: 2px solid #ffc107;
   margin: 0;
   padding: 5px 7px;
-  /* margin-left: 10.5px; */
   color: #ffffff; }
 
 /* WHEN HAMBURGER MENU IS TOOGLED */
@@ -41,7 +40,6 @@ i.fa-bars {
 .headerlogobox {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  /* background-color: indianred; */
   display: grid;
   align-content: center;
   justify-content: center; }
@@ -61,7 +59,6 @@ i.fa-bars {
 nav {
   grid-column: 2 / 5;
   grid-row: 1 / 2;
-  /* background-color: red; */
   height: inherit;
   font-family: 'Bungee', sans-serif; }
 
@@ -141,13 +138,10 @@ main {
 .menumaincontainer {
   width: 100%;
   height: auto;
-  min-height: inherit;
-  /* background-color: #ffc107; */
-  /* background: linear-gradient(#ffc107, #ffffff); */ }
+  min-height: inherit; }
 
 .menumaincontainerbox {
   display: grid;
-  /* align-content: center; */
   justify-content: center;
   width: 100%;
   height: auto;
@@ -176,7 +170,6 @@ main {
 .menuitemimagebox {
   grid-column: 1 / 2;
   grid-row: 1 / 6;
-  /* background-color: #1976d2; */
   display: grid;
   align-content: center;
   justify-content: center; }
@@ -185,7 +178,6 @@ main {
   100% {
     transform: rotate(360deg); } }
 .menuitemimage {
-  /* background: #ffffff; */
   max-width: 200px;
   max-height: 200px;
   width: 200px;
@@ -266,7 +258,6 @@ main {
   margin: 0;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
-  /* color: #000000; */
   font-size: 16px;
   margin: 0px 15px; }
 
@@ -303,7 +294,7 @@ main {
 .cartitembox {
   width: 80vw;
   height: 225px;
-  margin: 25px 0px;
+  margin: 20px 0px;
   background-color: #f1f1f1;
   box-shadow: 5px 5px 10px #00000059;
   display: grid;
@@ -413,6 +404,52 @@ main {
   font-size: 32px;
   font-family: 'Bungee', 'Open Sans', sans-serif;
   text-shadow: 2px 2px #ffffff; }
+
+.cartfinalcontainer {
+  width: 80vw;
+  height: 120px;
+  display: grid;
+  justify-content: right;
+  margin: 20px 0px; }
+
+.cartfinalbox {
+  width: 400px;
+  height: 100%;
+  background-color: #f1f1f1;
+  box-shadow: 5px 5px 10px #00000059;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr); }
+
+.cartfinalgrandbox,
+.cartfinaltoorderbox {
+  grid-column: 1 / 2;
+  display: grid;
+  justify-content: center;
+  align-content: center; }
+
+.cartfinalgrandbox {
+  grid-row: 1 / 2; }
+
+.cartfinalgrand {
+  margin: 0;
+  color: #1976d2;
+  font-size: 22px;
+  font-family: 'Bungee', sans-serif;
+  text-shadow: 2px 2px #ffffff; }
+
+.cartfinaltoorderbox {
+  grid-row: 2 / 3; }
+
+.cartfinaltoorder {
+  margin: 0;
+  background-color: #1976d2;
+  border: 2px solid #ffc107;
+  color: #ffffff;
+  font-family: 'Open sans', sans-serif;
+  padding: 5px 30px;
+  font-size: 22px;
+  text-transform: uppercase; }
 
 /* MEDIA QUERIES CSS PROPERTIES */
 @media screen and (max-width: 1250px) {
