@@ -1,0 +1,60 @@
+<%
+    i = 0
+    price = [75, 85]
+    specialPrice = [45]
+    quantity = [4, 2]
+    pizzaName = ["Margherita", "Pepperoni"]
+    # pizzaName = ["Hawaii"]
+    infoInfo = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia tempore autem excepturi nihil in dolorem dolorum minima fugit atque perferendis reprehenderit deleniti consequuntur adipisci fuga est quasi, quas inventore."]
+    namei = pizzaName.length
+    while i < namei
+%>
+    <div class="cartitembox">
+        <div class="cartitemimagebox">
+            <div class="cartitemimage" id="<%=pizzaName[i]%>bg"></div>
+        </div>
+        <div class="cartiteminfobox">
+            <div class="cartiteminfonamebox">
+                <h2 class="cartiteminfoname">Pizza <%=pizzaName[i]%></h2>
+            </div>
+            <div class="cartiteminfoinfobox">
+                <p class="cartiteminfoinfo"><%=infoInfo[0]%></p>
+            </div>
+            <div class="cartiteminfopricebox">
+            <%
+                if i < 1
+            %>
+                <p class="cartiteminfoprice">Pris: <%=specialPrice[i]%> kr.</p>
+            <%
+                else
+            %>
+                <p class="cartiteminfoprice">Pris: <%=price[i]%> kr.</p>
+            <%
+                end
+            %>
+            </div>
+        </div>
+        <div class="cartitemquantitybox">
+            <p class="cartitemquantity"><%=quantity[i]%> st</p>
+        </div>
+        <div class="cartitemtotalbox">
+            <%
+                if i < 1
+            %>
+                <p class="cartitemtotal">Totalt: <%=quantity[i] * specialPrice[i]%> kr.</p>
+            <%
+                else
+            %>
+                <p class="cartitemtotal">Totalt: <%=quantity[i] * price[i]%> kr.</p>
+            <%
+                end
+            %>
+        </div>
+        <div class="cartitemremovebox">
+            <p class="cartitemremove">X</p>
+        </div>
+    </div>
+<%
+        i += 1
+    end
+%>
