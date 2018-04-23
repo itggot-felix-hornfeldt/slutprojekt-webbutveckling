@@ -24,8 +24,8 @@
             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
             <script src="./js/mano_italiano.js"></script>
 		</head>
-		<body onload="mainElementMinHeight();">
-            <div class="indexsitecontainer" id="indexsitecontainer">
+		<body onload="mainElementMinHeight(); cartOverlaySlide();">
+            <div class="cartsitecontainer">
                 <header role="header">
                     <div class="headerhamburgertogglemenu">
                         <a onclick="manoItalianoDropdown()">
@@ -46,11 +46,9 @@
                         </div>
                     </nav>
                 </header>
-            </div>
-            <main role="main">
-                <!-- <div class="cartmainoverlay"></div> -->
-                <div class="cartmaincontainer">
-                    
+                <main role="main">
+                    <div class="cartmaincontainer">
+                        
     <div class="cartitembox">
         <div class="cartitemimagebox">
             <div class="cartitemimage" id="Margheritabg"></div>
@@ -123,7 +121,23 @@
         </div>
     </div>
 </div>
+                    </div>
+                </main>
+            </div>
+            <div class="cartoverlaycontainer">
+                <div class="cartoverlaycontentbox">
+                    <div class="cartoverlayinfobox">
+                        <h1 class="cartoverlayinfo">Work in progress...</h1>
+                    </div>
+                    <div class="cartoverlaynavigationbox">
+                        <ul class="cartoverlaynavigation">
+                            <a href="index.html"><li class="cartoverlaynavigationitem">Hem</li></a>
+                            <a href="menu.html"><li class="cartoverlaynavigationitem">Meny</li></a>
+                            <a href="contact.html"><li class="cartoverlaynavigationitem">Kontakt</li></a>
+                            <a href="staff.html"><li class="cartoverlaynavigationitem">Personal</li></a>
+                        </ul>
+                    </div>
                 </div>
-            </main>
+            </div>
         </body>
     </html>
