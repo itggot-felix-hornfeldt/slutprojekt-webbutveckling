@@ -340,6 +340,13 @@ main {
     height: 100%;
 }
 
+.cartoverlayinfobox {
+    text-align: center;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
 .cartoverlayinfo {
     margin: 0; 
     font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
@@ -534,7 +541,6 @@ main {
     height: 120px;
     display: grid;
     justify-content: right;
-    margin: 20px 0px;
 }
 
 .cartfinalbox {

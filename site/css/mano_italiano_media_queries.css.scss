@@ -8,6 +8,22 @@
     nav {
         grid-column: 2 / 4;
     }
+
+    .cartitembox {
+        width: 90vw;
+    }
+
+    .cartiteminfoinfo {
+        font-size: 14px;
+    }
+
+    .cartitemtotal {
+        font-size: 20px;
+    }
+
+    .cartfinalcontainer {
+        width: 90vw;
+    }
 }
 
 @media screen and (max-width:880px) {
@@ -131,6 +147,24 @@
     .menuiteminfoinfo {
         font-size: 14px;
     }
+    /* CART MOBILE QUERIE */
+    /*.cartoverlaycontainer {
+        display: block;
+    }*/
+
+    .cartoverlayinfo {
+        font-size: 80px;
+        margin-bottom: 25px;
+    }
+
+    .cartmaincontainer {
+        display: none;
+    }
+
+    .cartoverlaynavigationitem {
+        float: none;
+        padding: 0px 25px;
+    }
 }
 
 @media screen and (max-width: 370px) {
@@ -139,6 +173,15 @@
     }
 
     .navlistitem {
+        font-size: 20px;
+    }
+
+    /* CART SMALL QUERIE */
+    .cartoverlayinfo {
+        font-size: 64px;
+    }
+
+    .cartoverlaynavigationitem {
         font-size: 20px;
     }
 }
