@@ -5,13 +5,13 @@
     quantity = [4, 2]
     pizzaName = ["Margherita", "Pepperoni"]
     # pizzaName = ["Hawaii"]
-    infoInfo = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia tempore autem excepturi nihil in dolorem dolorum minima fugit atque perferendis reprehenderit deleniti consequuntur adipisci fuga est quasi, quas inventore."]
+    infoInfo = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia tempore autem excepturi nihil in dolorem."]
     namei = pizzaName.length
     while i < namei
 %>
-    <div class="cartitembox">
+    <div class="cartitembox" id="cartitembox<%=i+1%>">
         <div class="cartitemimagebox">
-            <!-- <div class="cartitemimage" id="<%=pizzaName[i]%>bg"></div>-->
+            <div class="cartitemimage" id="<%=pizzaName[i]%>bg"></div>
         </div>
         <div class="cartiteminfobox">
             <div class="cartiteminfonamebox">
