@@ -27,5 +27,5 @@ function addToCartAlert() {
 
 function cartOverlaySlide() {
     var overlay = document.querySelector('.cartoverlaycontainer');
-    $(overlay).fadeIn();
+    $(overlay).fadeIn(1000);
 }
