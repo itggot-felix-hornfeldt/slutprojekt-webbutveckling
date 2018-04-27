@@ -14,6 +14,25 @@ body {
   width: 100%;
   height: auto; }
 
+/* SPRITESHEET PROPERTIES */
+#Hawaiibg {
+  background: url("./../img/pizzas_sprites.png") -10px -10px; }
+
+#Kebabbg {
+  background: url("./../img/pizzas_sprites.png") -230px -10px; }
+
+#Margheritabg {
+  background: url("./../img/pizzas_sprites.png") -10px -230px; }
+
+#Pepperonibg {
+  background: url("./../img/pizzas_sprites.png") -230px -230px; }
+
+#Prosciuttobg {
+  background: url("./../img/pizzas_sprites.png") -450px -10px; }
+
+#Vegitarianbg {
+  background: url("./../img/pizzas_sprites.png") -450px -230px; }
+
 /* STANDARD HEADER PROPERTIES */
 header {
   height: 67px;
@@ -188,24 +207,6 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   animation: pizzaRotate 5s linear infinite; }
-
-#Hawaiibg {
-  background: url("./../img/pizzas_sprites.png") -10px -10px; }
-
-#Kebabbg {
-  background: url("./../img/pizzas_sprites.png") -230px -10px; }
-
-#Margheritabg {
-  background: url("./../img/pizzas_sprites.png") -10px -230px; }
-
-#Pepperonibg {
-  background: url("./../img/pizzas_sprites.png") -230px -230px; }
-
-#Prosciuttobg {
-  background: url("./../img/pizzas_sprites.png") -450px -10px; }
-
-#Vegitarianbg {
-  background: url("./../img/pizzas_sprites.png") -450px -230px; }
 
 .menuitempricebox {
   grid-column: 1 / 2;

@@ -17,6 +17,10 @@ body {
     height: auto;
 }
 
+/* SPRITESHEET PROPERTIES */
+
+@import "mano_italiano_sprites.css.scss";
+
 /* STANDARD HEADER PROPERTIES */
 
 header {
@@ -224,8 +228,6 @@ main {
     background-size: cover;
     animation: pizzaRotate 5s linear infinite;
 }
-
-@import "mano_italiano_pizza_bgs.css.scss";
 
 .menuitempricebox {
     grid-column: 1 / 2;
