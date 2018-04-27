@@ -1,3 +1,5 @@
+// console.log(document.querySelectorAll('a'));
+
 // Function that calculates the minimalheight of the main element
 function mainElementMinHeight() {
     var height = window.innerHeight;
@@ -9,23 +11,22 @@ function mainElementMinHeight() {
     } else {
         minimalHeight = height - 69;
     }
-    mainElement.style.minHeight = '' + minimalHeight + 'px';
+    mainElement.style.minHeight = '' + minimalHeight + 'px'; 
 }
+
+window.onload = mainElementMinHeight;
 
 // Function that slide the hamburgermenu and it's content
 function manoItalianoDropdown() {
+    // var hamburgerActivator = document.querySelectorAll('.headerhamburgertoggle');
     var navigationElement = document.querySelector('nav');
     var hamburger = document.querySelector('.fa-bars');
     $(navigationElement).slideToggle(1500, function(){
         hamburger.classList.toggle('hamburgeractive');
     });
+    // console.log(navigationElement, hamburger, hamburgerActivator);
 }
 
 function addToCartAlert() {
     alert("Du kan ej beställa denna produkt just nu. Försök igen senare.");
-}
-
-function cartOverlaySlide() {
-    var overlay = document.querySelector('.cartoverlaycontainer');
-    $(overlay).fadeIn(1000);
 }
