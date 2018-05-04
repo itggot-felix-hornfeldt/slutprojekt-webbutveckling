@@ -91,7 +91,7 @@
         display: none;
         height: auto;
         /* text-align: center; */
-        background-color: #1976d2;
+        background-color: $black;
         width: 100%;
         grid-column: 1 / 6;
         grid-row: auto;
@@ -276,6 +276,12 @@
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
     }
+
+    /* STAFF FILE MOBILE QUERIE */
+    .staffmaincontainer {
+        justify-content: center;
+    }
+
     /* CART MOBILE QUERIE */
     /*.cartoverlaycontainer {
         display: block;
