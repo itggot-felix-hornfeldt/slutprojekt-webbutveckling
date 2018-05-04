@@ -245,7 +245,9 @@ main {
 }
 
 .menuitemprice .lineoverprice {
-    text-decoration: line-through double #1976d2;
+    text-decoration: line-through;
+    text-decoration-color: #1976d2;
+    text-decoration-style: double;
     color: #00000059;
 }
 
