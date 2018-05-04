@@ -9,8 +9,7 @@ function mainElementMinHeight() {
     } else {
         minimalHeight = height - 69;
     }
-    mainElement.style.minHeight = '' + minimalHeight + 'px'; 
-    // console.log("mainelementminheight");
+    mainElement.style.minHeight = '' + minimalHeight + 'px';
 }
 
 // Function that slide the hamburgermenu and it's content
@@ -20,26 +19,37 @@ function manoItalianoDropdown() {
     $(navigationElement).slideToggle(1500, function(){
         hamburger.classList.toggle('hamburgeractive');
     });
-    // console.log("dropdown");
+}
+
+function hamburgerClickFunc() {
+    var hamburgerActivator = document.querySelector('.headerhamburgertoggle');
+    hamburgerActivator.onclick = manoItalianoDropdown;
+}
+
+// Fades in the overlay in cart.html
+function cartOverlayFade() {
+    var overlay = document.querySelector('.cartoverlaycontainer');
+    $(overlay).fadeIn(1000);
+}
+
+// Checks if any a elements has the class menuitemalert and if true then the addToCartALert function should be called onclick
+function checkMenuClass() {
+    var menuhasclass = document.querySelectorAll('a');
+    for (let index = 0; index < menuhasclass.length; index++) {
+        if ($(menuhasclass[index]).hasClass('menuitemalert')) {
+            var addCartAlert = document.querySelector('.menuitemalert');
+            addCartAlert.onclick = addToCartAlert;
+        }
+    }
 }
 
 function addToCartAlert() {
     alert("Du kan ej beställa denna produkt just nu. Försök igen senare.");
-    // console.log("alert");
-}
-
-function cartOverlaySlide() {
-    var overlay = document.querySelector('.cartoverlaycontainer');
-    $(overlay).fadeIn(1000);
-    // console.log("overlayslide");
 }
 
 $(function() {
-    var hamburgerActivator = document.querySelector('.headerhamburgertoggle');
-    // var addCartAlert = document.querySelector('.menuitemalert');
-    // addCartAlert.onclick = addToCartAlert;
-    hamburgerActivator.onclick = manoItalianoDropdown;
+    hamburgerClickFunc();
+    checkMenuClass();
     mainElementMinHeight();
-    cartOverlaySlide();
-    // console.log("onclick hamburger");
+    cartOverlayFade();
 })
