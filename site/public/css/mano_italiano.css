@@ -110,8 +110,7 @@ nav {
   font-size: 24px;
   color: #ffffff;
   padding: 0px 15px;
-  cursor: pointer;
-  text-shadow: 2px 2px #00000059; }
+  cursor: pointer; }
 
 .navlistitem:hover {
   color: #ffc107; }
@@ -290,23 +289,29 @@ main {
   height: auto;
   min-height: inherit;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap; }
 
 .staffitembox {
-  width: 225px;
-  height: 250px;
-  overflow: hidden;
+  max-width: 300px;
+  width: auto;
+  height: auto;
   margin: 15px;
-  border: 10px solid #f1f1f1;
-  border-radius: 25px;
-  opacity: 0.5;
-  cursor: pointer;
-  transition: opacity 0.5s linear; }
+  opacity: 0.35;
+  transition: opacity 0.75s linear; }
 
 .staffitembox:hover {
-  transition: opacity 0.5s linear;
-  opacity: 1; }
+  opacity: 1;
+  transition: opacity 0.75s linear; }
+
+.staffitemimagebox {
+  width: 225px;
+  height: 250px;
+  cursor: pointer;
+  border: 10px solid #000000;
+  border-radius: 25px;
+  overflow: hidden; }
 
 .staffitemimageholder {
   width: 100%;
@@ -314,6 +319,86 @@ main {
   background-image: url("http://cristaltokio.3dn.ru/_ph/8/2/198764709.gif?1509129063");
   background-size: cover;
   background-repeat: no-repeat; }
+
+.staffiteminfobox {
+  margin-top: 20px;
+  width: 245px;
+  height: 350px;
+  background-color: #ffffff;
+  margin-right: 0px;
+  box-shadow: 5px 5px 10px #00000059;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  overflow: hidden; }
+
+.staffiteminfoheadingbox,
+.staffiteminfonavbox {
+  border-bottom: 2px solid #000000; }
+
+.staffiteminfoheadingbox {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center; }
+
+.staffiteminfoheading {
+  margin: 0;
+  font-style: italic; }
+
+.staffiteminfonavbox {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr); }
+
+.staffiteminfonavpositionbox,
+.staffiteminfonavyowbox {
+  grid-column: 1 / 2;
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+.staffiteminfonavpositionbox {
+  grid-row: 1 / 2; }
+
+.staffiteminfonavyowbox {
+  grid-row: 2 / 3; }
+
+.staffiteminfonavpar {
+  margin: 0;
+  font-weight: 700; }
+
+.staffitemnavconf {
+  color: #ffc107 !important;
+  font-style: italic !important; }
+
+.staffiteminfoinfobox {
+  grid-column: 1 / 2;
+  grid-row: 4 / 9;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 10px; }
+
+.staffiteminfoinfo {
+  margin: 0; }
+
+.staffiteminfoquotebox {
+  grid-column: 1 / 2;
+  grid-row: 9 / 11;
+  padding: 0px 10px;
+  display: grid;
+  align-content: center; }
+
+.staffiteminfoquote {
+  margin: 0;
+  text-align: center;
+  font-style: italic; }
 
 /* CART FILE CSS PROPERTIES */
 /* CART OVERLAY PROPERTIES */
@@ -416,8 +501,7 @@ main {
   max-width: 200px;
   max-height: 200px;
   background-repeat: no-repeat;
-  background-size: cover;
-  animation: pizzaRotate 5s linear infinite; }
+  background-size: cover; }
 
 .cartiteminfobox {
   grid-column: 3 / 7;

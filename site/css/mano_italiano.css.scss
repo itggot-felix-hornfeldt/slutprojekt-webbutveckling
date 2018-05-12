@@ -118,7 +118,7 @@ nav {
     color: #ffffff;
     padding: 0px 15px;
     cursor: pointer;
-    text-shadow: 2px 2px #00000059;
+    // text-shadow: 2px 2px #00000059;
 }
 
 .navlistitem:hover {
@@ -331,28 +331,35 @@ main {
     height: auto;
     min-height: inherit;
     display: flex;
-    justify-content: left;
-    // align-items: center;
+    // justify-content: left;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     
 }
 
 .staffitembox {
-    width: 225px;
-    height: 250px;
-    overflow: hidden;
+    max-width: 300px;
+    width: auto;
+    height: auto;
     margin: 15px;
-    border: 10px solid #f1f1f1;
-    border-radius: 25px;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: opacity 0.5s linear;
+    opacity: 0.35;
+    transition: opacity 0.75s linear;
+    // cursor: pointer;
 }
 
 .staffitembox:hover {
-    transition: opacity 0.5s linear;
     opacity: 1;
-    // zoom: 1.1;
+    transition: opacity 0.75s linear;
+}
+
+.staffitemimagebox {
+    width: 225px;
+    height: 250px;
+    cursor: pointer;
+    border: 10px solid #000000;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 .staffitemimageholder {
@@ -364,6 +371,103 @@ main {
     background-repeat: no-repeat;
 }
 
+.staffiteminfobox {
+    margin-top: 20px;
+    width: 245px;
+    height: 350px;
+    background-color: #ffffff;
+    margin-right: 0px;
+    box-shadow: 5px 5px 10px #00000059;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    overflow: hidden;
+    // cursor: default;
+}
+
+.staffiteminfoheadingbox,
+.staffiteminfonavbox {
+    border-bottom: 2px solid #000000;
+}
+
+.staffiteminfoheadingbox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.staffiteminfoheading {
+    margin: 0;
+    font-style: italic;
+}
+
+.staffiteminfonavbox {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    // background-color: #848092;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.staffiteminfonavpositionbox,
+.staffiteminfonavyowbox {
+    grid-column: 1 / 2;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.staffiteminfonavpositionbox {
+    grid-row: 1 / 2;
+}
+
+.staffiteminfonavyowbox {
+    grid-row: 2 / 3;
+}
+
+.staffiteminfonavpar {
+    margin: 0;
+    font-weight: 700;
+}
+
+.staffitemnavconf {
+    color: #ffc107 !important;
+    font-style: italic !important;
+}
+
+.staffiteminfoinfobox {
+    grid-column: 1 / 2;
+    grid-row: 4 / 9;
+    // background-color: #173592;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 10px;
+}
+
+.staffiteminfoinfo {
+    margin: 0;
+}
+
+.staffiteminfoquotebox {
+    grid-column: 1 / 2;
+    grid-row: 9 / 11;
+    // background-color: #547245;
+    padding: 0px 10px;
+    display: grid;
+    align-content: center;
+}
+
+.staffiteminfoquote {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+}
 
 /* CART FILE CSS PROPERTIES */
 /* CART OVERLAY PROPERTIES */
@@ -482,7 +586,7 @@ main {
     max-height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: pizzaRotate 5s linear infinite;
+    // animation: pizzaRotate 5s linear infinite;
 }
 
 .cartiteminfobox {

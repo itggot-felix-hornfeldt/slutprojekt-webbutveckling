@@ -1,0 +1,38 @@
+<%
+    i = 0
+    idName = ["CT", "RR", "CV", "SSA", "EQ"]
+    name = ["Chandler Tribbiani", "Rubén Ros", "Carlos Villanueva", "Sara Sofía Águila", "Emily Quesada"]
+    position = ["Manager", "Head Chef", "Sous Chef", "Floor Manager", "Head Recruiter"]
+    yow = [14, 5, 5, 13, 7]
+    while i < name.length
+%>
+<div class="staffitembox" id="staff<%=idName[i]%>box">
+    <div class="staffitemimagebox">
+        <div class="staffitemimageholder" id="staffimage<%=idName[i]%>"></div>
+    </div>
+    <div class="staffiteminfobox">
+        <div class="staffiteminfoheadingbox">
+            <h2 class="staffiteminfoheading"><%=name[i]%></h2>
+        </div>
+        <div class="staffiteminfonavbox">
+            <div class="staffiteminfonavpositionbox">
+                <p class="staffiteminfonavpar">Position: <a class="staffitemnavconf"><%=position[i]%></a></p>
+            </div>
+            <div class="staffiteminfonavyowbox">
+                <p class="staffiteminfonavpar">Antal år hos oss: <a class="staffitemnavconf"><%=yow[i]%> år</a></p>
+            </div>
+        </div>
+        <div class="staffiteminfoinfobox">
+            <p class="staffiteminfoinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, consequatur quia quod maiores beatae molestiae obcaecati aperiam adipisci, consectetur magnam modi pariatur accusamus.</p>
+        </div>
+        <div class="staffiteminfoquotebox">
+            <p class="staffiteminfoquote">"Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</div>
+
+
+<%
+        i += 1        
+    end
+%>
