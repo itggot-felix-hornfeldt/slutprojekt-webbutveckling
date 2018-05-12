@@ -1,5 +1,5 @@
-ignore("./La_Mano_Italino.md")
 ignore("./css/mano_italiano_media_queries.css.scss")
 ignore("./css/mano_italiano_sprites.css.scss")
 ignore("./ruby/menuholder.html.erb")
 ignore("./ruby/cartholder.html.erb")
+ignore("./ruby/staffholder.html.erb")
