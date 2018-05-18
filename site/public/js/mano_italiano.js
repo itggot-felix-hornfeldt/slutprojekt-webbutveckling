@@ -34,13 +34,7 @@ function cartOverlayFade() {
 
 // Checks if any a elements has the class menuitemalert and if true then the addToCartALert function should be called onclick
 function checkMenuClass() {
-    var menuhasclass = document.querySelectorAll('a');
-    for (let index = 0; index < menuhasclass.length; index++) {
-        if ($(menuhasclass[index]).hasClass('menuitemalert')) {
-            var addCartAlert = document.querySelector('.menuitemalert');
-            addCartAlert.onclick = addToCartAlert;
-        }
-    }
+    $('.menuitemalert').click(addToCartAlert);
 }
 
 function addToCartAlert() {
