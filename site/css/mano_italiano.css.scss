@@ -143,32 +143,87 @@ main {
     min-height: inherit;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    /* background: $black; */
-    /* background-image: url("./../../og_files/charcoal_planks_og.jpg"); */
+    background: $black; 
+}
+
+.indexmainspecialpricebox {
+    // background-color: hotpink;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.indexspecialpriceimagebox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.indexspecialpriceimage {
+    max-width: 200px;
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.indexmainspecialpricebox {
-    /* background-color: hotpink; */
+.indexspecialpriceinfobox {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-row: 5 / 7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.indexspecialpriceinfoheadlinebox,
+.indexspecialpriceinfopricebox {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.indexspecialpriceinfoheadline {
+    margin: 0;
+    font-size: 48px;
+    font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
+    color: #ffc107;
+}
+
+.indexspecialpriceinfoprice {
+    margin: 0;
+    font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;    
+    color: #ff0000;
+    font-size: 38px;
+}
+
+.indexspecialogprice {
+    text-decoration: line-through;
+    text-decoration-color: #ffffff;
+    text-decoration-style: double;
+    color: #f1f1f1;
 }
 
 .indexmainwehowworkherebox {
-    /* background-color: forestgreen; */
+    // background-color: forestgreen;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
 }
 
 .indexmainopentimesbox {
-    /* background-color: crimson; */
+    // background-color: crimson;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 
 .indexmainreviewsbox {
-    /* background-color: darkturquoise; */
+    // background-color: darkturquoise;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
 }
@@ -326,6 +381,11 @@ main {
 
 /* STAFF FILE CSS PROPERTIES */
 
+.staffmainclass {
+    // background-color: #ffffff;
+    background-color: #f1f1f1;
+}
+
 .staffmaincontainer {
     width: 100%;
     height: auto;
@@ -343,7 +403,7 @@ main {
     width: auto;
     height: auto;
     margin: 15px;
-    opacity: 0.35;
+    opacity: 0.45;
     transition: opacity 0.75s linear;
     // cursor: pointer;
 }
@@ -365,8 +425,8 @@ main {
 .staffitemimageholder {
     width: 100%;
     height: 100%;
-    // background-color: #193619;
-    background-image: url("http://cristaltokio.3dn.ru/_ph/8/2/198764709.gif?1509129063");
+    // background-image: url("http://cristaltokio.3dn.ru/_ph/8/2/198764709.gif?1509129063");
+    background-image: url("./../img/Untitled-1.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -376,6 +436,7 @@ main {
     width: 245px;
     height: 350px;
     background-color: #ffffff;
+    // background-color: #f1f1f1;
     margin-right: 0px;
     box-shadow: 5px 5px 10px #00000059;
     border-radius: 25px;
@@ -383,7 +444,6 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, 1fr);
     overflow: hidden;
-    // cursor: default;
 }
 
 .staffiteminfoheadingbox,

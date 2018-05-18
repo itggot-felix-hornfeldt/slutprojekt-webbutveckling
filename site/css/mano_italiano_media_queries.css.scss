@@ -102,6 +102,10 @@
         margin: 10px 0px;
     }
 
+    .staffitembox {
+        opacity: 1;
+    }
+
     .cartoverlayinfo {
         font-size: 155px;
     }
@@ -243,7 +247,7 @@
     .indexmaincontainer {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        background: none;
+        // background: none;
     }
 
     .indexmainspecialpricebox {
