@@ -52,8 +52,39 @@
                             <script src="./js/indexgenerator.js"></script>
                         </div>
                         <div class="indexmainwehowworkherebox"></div>
-                        <div class="indexmainopentimesbox"></div>
-                        <div class="indexmainreviewsbox"></div>
+                        <div class="indexmainopentimesbox">
+                            <div class="indexmainopentimescontainer">
+                                <div class="indexopentimesheadlinebox">
+                                    <h2 class="indexopentimesheadline">Öppettider:</h2>
+                                </div>
+                                <div class="indexopentimesdaysbox">
+                                    <div class="indexopentimesdaysmonfrebox">
+                                        <p class="indexopentimesdays"><a class="indexopentimesdaysspecial">Mån - Fre:</a> 11 - 20</p>
+                                    </div>
+                                    <div class="indexopentimesdayslorsonbox">
+                                        <p class="indexopentimesdays"><a class="indexopentimesdaysspecial">Lör - Sön:</a> 12 - 22</p>
+                                    </div>
+                                </div>
+                                <div class="indexopentimesnumberbox">
+                                    <p class="indexopentimesnumberparagraph">Ring 031-892541 för beställning.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indexmainreviewsbox">
+                            <%
+                                i = 0
+                                review = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, recusandae sapiente optio iure quod veniam! Deleniti architecto, nostrum optio.", "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, recusandae sapiente.", "Deleniti architecto, nostrum optio."]
+                                name = ["Bert Karlsson", "Gordon Ramsey", "Daniel Lundholm", "David Berg"]
+                                while i < name.length
+                            %>
+                                <div class="indexreviewbox" id="indexreviewbox<%=i%>">
+                                    <p class="indexreview">"<%=review[i]%>"<br><a class="indexreviewname">- <%=name[i]%></a></p>
+                                </div>
+                            <%
+                                    i += 1
+                                end
+                            %>
+                        </div>
                     </div>
                 </main>
             </div>

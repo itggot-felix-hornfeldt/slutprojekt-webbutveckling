@@ -220,12 +220,109 @@ main {
     // background-color: crimson;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.indexmainopentimescontainer {
+    width: 250px;
+    height: 250px;
+    // background-color: #567352;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.indexopentimesheadlinebox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    align-content: center;
+}
+
+.indexopentimesheadline {
+    margin: 0;
+    color: #f1f1f1;
+    font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
+    font-style: italic;
+    font-size: 42px;
+    text-align: center;
+}
+
+.indexopentimesdaysbox {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    // background-color: #163846;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.indexopentimesdaysmonfrebox,
+.indexopentimesdayslorsonbox {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.indexopentimesdays {
+    color: #ffc107;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.indexopentimesdaysspecial {
+    color: #f1f1f1;
+}
+
+.indexopentimesnumberbox {
+    display: grid;
+    align-content: center;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.indexopentimesnumberparagraph {
+    margin: 0;
+    font-size: 16px;
+    color: #ffc107;
+    text-align: center;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: italic;
 }
 
 .indexmainreviewsbox {
     // background-color: darkturquoise;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.indexreviewbox {
+    margin: 5px 0px;
+    max-width: 750px;
+    // background-color: #fff;
+}
+
+.indexreview {
+    color: #f1f1f1;
+    margin: 0;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.indexreviewname {
+    font-style: italic;
+    font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
+    font-size: 28px;
 }
 
 /* MENU FILE CSS PROPERTIES */
