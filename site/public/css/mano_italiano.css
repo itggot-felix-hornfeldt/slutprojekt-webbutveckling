@@ -196,9 +196,17 @@ main {
   text-decoration-style: double;
   color: #f1f1f1; }
 
-.indexmainwehowworkherebox {
+.indexmainimageshowbox {
   grid-column: 2 / 4;
-  grid-row: 1 / 2; }
+  grid-row: 1 / 2;
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+.indexmainimageshow {
+  width: 750px;
+  height: 300px;
+  background-color: #fff; }
 
 .indexmainopentimesbox {
   grid-column: 1 / 2;
@@ -418,7 +426,88 @@ main {
 .menuiteminfoadd:hover {
   color: #ffc107; }
 
+/* CONTACT FILE CSS PROPERTIES */
+/* CONTACT MAIN ELEMENT PROPERTIES */
+.contactmaincontainer {
+  min-height: inherit;
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr; }
+
+.contactmaincontactinfobox {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+.contactmaininformationbox {
+  height: auto;
+  width: 450px; }
+
+.contactinquiriebox {
+  font-family: 'Open sans', 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 25px 0px; }
+
+.contactinquiryheading {
+  font-weight: 700;
+  font-style: italic;
+  margin: 0; }
+
+.contactinquirycontent {
+  margin: 0;
+  font-weight: 100;
+  font-size: 14px; }
+
+.contactinquiryinfo {
+  font-style: italic;
+  margin: 0;
+  font-weight: 100;
+  color: #000000; }
+
+.contactspecialcolor {
+  color: #ffc107;
+  font-weight: 700; }
+
+.contactmainopentimesadressbox {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+.contactopentimesadresscontainer {
+  width: 450px;
+  height: auto;
+  margin: 10px 0px; }
+
+.contactopentimesbox {
+  display: grid; }
+
+.contactopentimesheadline {
+  margin: 0;
+  color: #000000;
+  font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
+  font-style: italic;
+  font-size: 42px;
+  text-align: center; }
+
+.contactmainmapbox {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+.contactgooglemap {
+  width: 400px;
+  height: 600px;
+  border-radius: 25px; }
+
 /* STAFF FILE CSS PROPERTIES */
+/* sTAFF FILE CSS PROPERTIES */
 .staffmainclass {
   background-color: #f1f1f1; }
 
@@ -853,6 +942,22 @@ main {
   .navlistitem {
     margin: 10px 0px; }
 
+  .contactmaincontainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto); }
+
+  .contactmainopentimesadressbox {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+
+  .contactmainmapbox {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: auto; }
+
+  .contactgooglemap {
+    margin: 25px 0px; }
+
   .staffitembox {
     opacity: 1; }
 
@@ -979,20 +1084,24 @@ main {
   .indexspecialpriceinfoheadline {
     font-size: 36px; }
 
-  .indexmainwehowworkherebox {
-    height: 250px;
-    width: 100%;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3; }
-
-  .indexmainopentimesbox {
+  .indexmainimageshowbox {
     display: none; }
 
+  .indexmainopentimesbox {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: auto;
+    border-top: 1px solid #ffc107; }
+
   .indexmainreviewsbox {
-    height: 500px;
+    height: 400px;
     width: 100%;
     grid-column: 1 / 2;
-    grid-row: 3 / 4; }
+    grid-row: 3 / 4;
+    border-top: 1px solid #ffc107; }
+
+  .indexreviewbox {
+    max-width: 325px; }
 
   /* MENU ITEM BOX MOBILE QUERIE */
   .menuitembox {
@@ -1001,6 +1110,24 @@ main {
     height: 85vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr; }
+
+  /* CONTACT FILE MOBILE QUERIE */
+  .contactmaininformationbox {
+    height: auto;
+    width: 350px; }
+
+  .contactmainmapbox {
+    border-top: 1px solid #000000; }
+
+  .contactgooglemap {
+    width: 350px;
+    height: 450px; }
+
+  .contactmainopentimesadressbox {
+    border-top: 1px solid #000000; }
+
+  .contactopentimesadresscontainer {
+    width: 350px; }
 
   /* STAFF FILE MOBILE QUERIE */
   .staffmaincontainer {
@@ -1019,7 +1146,7 @@ main {
 
   .cartoverlaynavigationitem {
     float: none;
-    padding: 0px 25px; } }
+    padding: 5px 25px; } }
 @media screen and (max-width: 450px) {
   .menuitembox {
     width: 90vw; } }

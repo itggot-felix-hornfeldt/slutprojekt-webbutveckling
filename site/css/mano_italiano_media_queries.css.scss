@@ -102,6 +102,26 @@
         margin: 10px 0px;
     }
 
+    .contactmaincontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .contactmainopentimesadressbox {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .contactmainmapbox {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        height: auto;
+    }
+
+    .contactgooglemap {
+        margin: 25px 0px;
+    }
+
     .staffitembox {
         opacity: 1;
     }
@@ -259,22 +279,27 @@
         font-size: 36px;
     }
 
-    .indexmainwehowworkherebox {
-        height: 250px;
-        width: 100%;
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
+    .indexmainimageshowbox {
+        display: none
     }
 
     .indexmainopentimesbox {
-        display: none;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        height: auto;
+        border-top: 1px solid #ffc107;
     }
 
     .indexmainreviewsbox {
-        height: 500px;
+        height: 400px;
         width: 100%;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
+        border-top: 1px solid #ffc107;
+    }
+
+    .indexreviewbox {
+        max-width: 325px;
     }
     /* MENU ITEM BOX MOBILE QUERIE */
     .menuitembox {
@@ -283,6 +308,29 @@
         height: 85vh;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
+    }
+
+    /* CONTACT FILE MOBILE QUERIE */
+    .contactmaininformationbox {
+        height: auto;
+        width: 350px;
+    }
+
+    .contactmainmapbox {
+        border-top: 1px solid #000000;
+    }
+
+    .contactgooglemap {
+        width: 350px;
+        height: 450px;
+    }
+
+    .contactmainopentimesadressbox {
+        border-top: 1px solid #000000;
+    }
+
+    .contactopentimesadresscontainer {
+        width: 350px;
     }
 
     /* STAFF FILE MOBILE QUERIE */
@@ -306,7 +354,7 @@
 
     .cartoverlaynavigationitem {
         float: none;
-        padding: 0px 25px;
+        padding: 5px 25px;
     }
 }
 
