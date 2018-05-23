@@ -47,7 +47,43 @@
                     </nav>
                 </header>
                 <main role="main">
-                    <div class="contactmaincontainer"></div>
+                    <div class="contactmaincontainer">
+                        <div class="contactmaincontactinfobox">
+                            <div class="contactmaininformationbox">
+                                <%= render("./ruby/contactinformationholder.html.erb") %>
+                            </div>
+                        </div>
+                        <div class="contactmainopentimesadressbox">
+                            <div class="contactopentimesadresscontainer">
+                                <div class="contactopentimesbox">
+                                    <h2 class="contactopentimesheadline">Oppettider:</h2>
+                                    
+                                </div>
+                                <div class=""></div>
+                            </div>
+                        </div>
+                        <div class="contactmainmapbox">
+                            <div class="contactgooglemap"></div>
+                            <script>
+                                function initMap() {
+                                  var center = {lat: 57.690335, lng: 11.974531};
+                                  var map = new google.maps.Map(document.querySelector('.contactgooglemap'), {
+                                    zoom: 15,
+                                    center: center,
+                                    mapTypeId: 'satellite',
+                                    fullscreenControl: false
+                                  });
+                                  var marker = new google.maps.Marker({
+                                    position: center,
+                                    map: map
+                                  });
+                                }
+                              </script>
+                              <script async defer
+                              src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+                            </script>
+                        </div>
+                    </div>
                 </main>
             </div>
         </body>
