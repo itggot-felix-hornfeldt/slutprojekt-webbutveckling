@@ -1,30 +1,29 @@
 <%
     i = 0
     price = [75, 85]
-    specialPrice = [55]
+    special_price = [55]
     quantity = [4, 2]
-    pizzaName = ["Margherita", "Pepperoni"]
-    # pizzaName = ["Hawaii"]
-    infoInfo = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia tempore autem excepturi nihil in dolorem."]
-    namei = pizzaName.length
+    pizza_name = ["Margherita", "Pepperoni"]
+    info_info = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia tempore autem excepturi nihil in dolorem."]
+    namei = pizza_name.length
     while i < namei
 %>
     <div class="cartitembox" id="cartitembox<%=i+1%>">
         <div class="cartitemimagebox">
-            <div class="cartitemimage" id="<%=pizzaName[i]%>bg"></div>
+            <div class="cartitemimage" id="<%=pizza_name[i]%>bg"></div>
         </div>
         <div class="cartiteminfobox">
             <div class="cartiteminfonamebox">
-                <h2 class="cartiteminfoname">Pizza <%=pizzaName[i]%></h2>
+                <h2 class="cartiteminfoname">Pizza <%=pizza_name[i]%></h2>
             </div>
             <div class="cartiteminfoinfobox">
-                <p class="cartiteminfoinfo"><%=infoInfo[0]%></p>
+                <p class="cartiteminfoinfo"><%=info_info[0]%></p>
             </div>
             <div class="cartiteminfopricebox">
             <%
                 if i < 1
             %>
-                <p class="cartiteminfoprice">Pris: <%=specialPrice[i]%> kr.</p>
+                <p class="cartiteminfoprice">Pris: <%=special_price[i]%> kr.</p>
             <%
                 else
             %>
@@ -41,7 +40,7 @@
             <%
                 if i < 1
             %>
-                <p class="cartitemtotal">Total: <%=quantity[i] * specialPrice[i]%> kr.</p>
+                <p class="cartitemtotal">Total: <%=quantity[i] * special_price[i]%> kr.</p>
             <%
                 else
             %>
@@ -63,7 +62,7 @@
     grand = 0
     while z < namei
         if z < 1
-            grand = grand + (specialPrice[z] * quantity[z])
+            grand = grand + (special_price[z] * quantity[z])
         else 
             grand = grand + (price[z] * quantity[z])
         end

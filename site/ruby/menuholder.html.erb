@@ -1,22 +1,21 @@
 <%
     i = 0
     price = [85, 95, 75, 85, 105, 175]
-    specialPrice = [65, 75, 55]
-    pizzaName = ["Hawaii", "Kebab", "Margherita", "Pepperoni", "Prosciutto", "Vegitarian"]
-    # pizzaName = ["Hawaii"]
-    infoInfo = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia tempore autem excepturi nihil in dolorem dolorum minima fugit atque perferendis reprehenderit deleniti."]
-    while i < pizzaName.length
+    special_price = [65, 75, 55]
+    pizza_name = ["Hawaii", "Kebab", "Margherita", "Pepperoni", "Prosciutto", "Vegitarian"]
+    info_info = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia tempore autem excepturi nihil in dolorem dolorum minima fugit atque perferendis reprehenderit deleniti."]
+    while i < pizza_name.length
 %>
     <div class="menuitembox">
         <div class="menuitemimagepricebox">
             <div class="menuitemimagebox">
-                <div class="menuitemimage" id="<%=pizzaName[i]%>bg"></div>
+                <div class="menuitemimage" id="<%=pizza_name[i]%>bg"></div>
             </div>
             <div class="menuitempricebox">
             <%
                 if i <= 2
             %> 
-                <p class="menuitemprice"><a class="lineoverprice"><%=price[i]%> kr.</a><a class="specialpriceactiv"> <%=specialPrice[i]%> kr.</a></p>
+                <p class="menuitemprice"><a class="lineoverprice"><%=price[i]%> kr.</a><a class="specialpriceactiv"> <%=special_price[i]%> kr.</a></p>
             <%
                 else
             %>
@@ -28,10 +27,10 @@
         </div>
         <div class="menuiteminfobox">
             <div class="menuiteminfonamebox">
-                <h2 class="menuiteminfoname">Pizza <%=pizzaName[i]%></h2>
+                <h2 class="menuiteminfoname">Pizza <%=pizza_name[i]%></h2>
             </div>
             <div class="menuiteminfoinfobox">
-                <p class="menuiteminfoinfo"><%=infoInfo[0]%></p>
+                <p class="menuiteminfoinfo"><%=info_info[0]%></p>
             </div>
             <div class="menuiteminfoaddbox">
                 <a class="menuitemalert"><button class="menuiteminfoadd">Lägg i kundvagn</button></a>
