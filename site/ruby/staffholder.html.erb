@@ -1,15 +1,15 @@
 <%
     i = 0
-    idName = ["CT", "RR", "CV", "SSA", "EQ"]
+    id_name = ["CT", "RR", "CV", "SSA", "EQ"]
     name = ["Chandler Tribbiani", "Rubén Ros", "Carlos Villanueva", "Sara Sofía Águila", "Emily Quesada"]
-    position = ["Manager", "Head Chef", "Sous Chef", "Floor Manager", "Head Recruiter"]
+    position = ["Manager", "Head Baker", "Second Baker", "Floor Manager", "Head Recruiter"]
     yow = [14, 5, 5, 13, 7]
     quote = ["A leader is admired, a boss is feared.", "'Chef' doesn't mean that you're the best cook, it simply means 'boss.'", "I never even dreamed of being a chef, and that's fundamental.", "I'd probably be famous now if I wasn't such a good waitress.", "Time spent on hiring, is time well spent."]
     while i < name.length
 %>
-<div class="staffitembox" id="staff<%=idName[i]%>box">
+<div class="staffitembox" id="staff<%=id_name[i]%>box">
     <div class="staffitemimagebox">
-        <div class="staffitemimageholder" id="staffimage<%=idName[i]%>"></div>
+        <div class="staffitemimageholder" id="staffimage<%=id_name[i]%>"></div>
     </div>
     <div class="staffiteminfobox">
         <div class="staffiteminfoheadingbox">
