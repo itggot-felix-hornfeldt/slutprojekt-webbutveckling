@@ -469,7 +469,7 @@ main {
 
 .contactspecialcolor {
   color: #ffc107;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .contactmainopentimesadressbox {
   grid-column: 2 / 3;
@@ -483,16 +483,36 @@ main {
   height: auto;
   margin: 10px 0px; }
 
-.contactopentimesbox {
-  display: grid; }
+.contactopentimesbox,
+.contactadressbox {
+  text-align: center;
+  margin: 25px 0px; }
 
-.contactopentimesheadline {
+.contactopentimesheadline,
+.contactadressheadline {
   margin: 0;
   color: #000000;
   font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
   font-style: italic;
-  font-size: 42px;
-  text-align: center; }
+  font-size: 48px; }
+
+.contactcontentinfo {
+  margin: 0;
+  color: #000000;
+  margin: 5px 0px; }
+
+.contactcontentspecial {
+  color: #ffc107;
+  font-weight: 600; }
+
+.contactopentimeday {
+  margin: 0;
+  color: #ffc107;
+  margin: 5px 0px; }
+
+.contactopentimedayblack {
+  color: #000000;
+  font-weight: 600; }
 
 .contactmainmapbox {
   grid-row: 1 / 2;

@@ -533,12 +533,12 @@ main {
     font-style: italic;
     margin: 0;
     font-weight: 100;
-    color: #000000;
+    color: $black;
 }
 
 .contactspecialcolor {
     color: #ffc107;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .contactmainopentimesadressbox {
@@ -557,17 +557,41 @@ main {
     // background-color: #578380;
 }
 
-.contactopentimesbox {
-    display: grid;
+.contactopentimesbox,
+.contactadressbox {
+    text-align: center;
+    margin: 25px 0px;
 }
 
-.contactopentimesheadline {
+.contactopentimesheadline,
+.contactadressheadline {
     margin: 0;
-    color: #000000;
+    color: $black;
     font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
     font-style: italic;
-    font-size: 42px;
-    text-align: center;
+    font-size: 48px;
+}
+
+.contactcontentinfo {
+    margin: 0;
+    color: $black;
+    margin: 5px 0px;
+}
+
+.contactcontentspecial {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+.contactopentimeday {
+    margin: 0;
+    color: #ffc107;
+    margin: 5px 0px;
+}
+
+.contactopentimedayblack {
+    color: $black;
+    font-weight: 600;
 }
 
 .contactmainmapbox {
@@ -582,7 +606,7 @@ main {
     width: 400px;
     height: 600px;
     // border: 10px solid #ffc107;
-    // border: 10px solid #000000;
+    // border: 10px solid $black;
     border-radius: 25px;
 }
 
@@ -624,7 +648,7 @@ main {
     width: 225px;
     height: 250px;
     cursor: pointer;
-    border: 10px solid #000000;
+    border: 10px solid $black;
     border-radius: 25px;
     overflow: hidden;
 }
@@ -655,7 +679,7 @@ main {
 
 .staffiteminfoheadingbox,
 .staffiteminfonavbox {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid $black;
 }
 
 .staffiteminfoheadingbox {
