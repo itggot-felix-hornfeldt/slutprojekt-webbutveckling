@@ -1,0 +1,86 @@
+<div class="contactmaincontactinfobox">
+    <div class="contactmaininformationbox">
+        <%
+    i = 0
+    name_heading = ["företags frågor", "jobb frågor", "service frågor", "Kundtjänst"]
+    content_inquiry = ["Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea fuga minima consequuntur aliquid error."]
+    contact_name = ["Chandler Tribbiani", "Emily Quesada", "Sara Sofía Águila", "Kundtjänst"]
+    mail_name = ["chandler_tribbiani", "emily_quesada", "sara_sofía_águila", "customer_service"]
+    mail_subject = ["Företags%20frågor", "Jobb%20frågor", "Service%20frågor", "Kundtjänst"]
+    phone_number = ["070-9476156", "070-9461298", "070-9403859", "031-671337"]
+    while i < name_heading.length 
+%>
+    <div class="contactinquiriebox" name="<%=name_heading[i]%>">
+        <%
+            if name_heading[i] == "Kundtjänst"
+        %>
+            <p class="contactinquiryheading"><%=name_heading[i]%>:</p>
+        <%    
+            else 
+        %>
+            <p class="contactinquiryheading">För <%=name_heading[i]%>:</p>
+        <%     
+            end
+        %>
+        <p class="contactinquirycontent"><%=content_inquiry[0]%></p>
+        <p class="contactinquiryinfo"><a class="contactspecialcolor">Kontakt: </a><%=contact_name[i]%><br><a class="contactspecialcolor">Mail: </a><a href="mailto:<%=mail_name[i]%>@lamanoitaliano.se?Subject=<%=mail_subject[i]%>"><%=mail_name[i]%>@lamanoitaliano.se</a><br><a class="contactspecialcolor">Mobil: </a><%=phone_number[i]%></p>
+    </div>
+<%
+        i += 1
+    end
+%>
+    </div>
+</div>
+<div class="contactmainopentimesadressbox">
+    <div class="contactopentimesadresscontainer">
+        <div class="contactadressbox">
+            <h2 class="contactadressheadline">Kontaktinformation:</h2>
+            <%
+                i = 0
+                content_name = ["Adress: ", "Mobil: "]
+                content = ["Origovägen 4, 412 58 Göteborg" ,"031-892541"]
+                while i < content_name.length
+            %>
+                <p class="contactcontentinfo"><a class="contactcontentspecial"><%=content_name[i]%></a><%=content[i]%></p>
+            <%
+                    i += 1
+                end
+            %>
+        </div>
+        <div class="contactopentimesbox">
+            <h2 class="contactopentimesheadline">Opettider:</h2>
+            <%
+                i = 0
+                day = ["Mån", "Tis", "Ons", "Tors", "Fre", "Lör", "Sön"]
+                open_time = ["11 - 20", "11 - 20", "11 - 20", "11 - 20", "11 - 20", "12 - 22", "12 - 22"]
+                while i < day.length
+            %>
+                <p class="contactopentimeday" name="<%=day[i]%>dag"><a class="contactopentimedayblack"><%=day[i]%>dag: </a><%=open_time[i]%></p>
+            <%
+                    i += 1
+                end
+            %>
+        </div>
+    </div>
+</div>
+<div class="contactmainmapbox">
+    <div class="contactgooglemap"></div>
+    <script>
+        function initMap() {
+            var center = {lat: 57.690335, lng: 11.974531};
+            var map = new google.maps.Map(document.querySelector('.contactgooglemap'), {
+            zoom: 15,
+            center: center,
+            mapTypeId: 'hybrid',
+            fullscreenControl: false
+            });
+            var marker = new google.maps.Marker({
+            position: center,
+            map: map
+            });
+        }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+</div>
