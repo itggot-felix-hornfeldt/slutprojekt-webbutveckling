@@ -9,6 +9,10 @@ body {
 /* VARS */
 
 $black: #000000;
+$red: #ff0000;
+$orange: #ffc107;
+$white: #ffffff;
+$whitegrey: #f1f1f1;
 
 /* SITECONTAINERS CSS PROPERTIES */
 
@@ -44,10 +48,10 @@ header {
 
 i.fa-bars {
     font-size: 32px;
-    border: 2px solid #ffc107;
+    border: 2px solid $orange;
     margin: 0;
     padding: 5px 7px;
-    color: #ffffff;
+    color: $white;
 }
 
 /* WHEN HAMBURGER MENU IS TOOGLED */
@@ -76,7 +80,7 @@ i.fa-bars {
     font-size: 42px;
     font-weight: 700;
     font-style: italic;
-    color: #ffc107;
+    color: $orange;
     margin: 0;
 }
 
@@ -107,7 +111,7 @@ nav {
     text-decoration: none;
     cursor: pointer;
     transition: all 1s ease-in;
-    color: #ffffff;
+    color: $white;
 }
 
 .navlistitem {
@@ -115,14 +119,13 @@ nav {
     text-transform: uppercase;
     margin: 0;
     font-size: 24px;
-    color: #ffffff;
+    color: $white;
     padding: 0px 15px;
     cursor: pointer;
-    // text-shadow: 2px 2px #00000059;
 }
 
 .navlistitem:hover {
-    color: #ffc107;
+    color: $orange;
 }
 
 /* MAIN ELEMENT CSS PROPERTIES */
@@ -147,7 +150,6 @@ main {
 }
 
 .indexmainspecialpricebox {
-    // background-color: hotpink;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     display: grid;
@@ -193,25 +195,24 @@ main {
     margin: 0;
     font-size: 48px;
     font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
-    color: #ffc107;
+    color: $orange;
 }
 
 .indexspecialpriceinfoprice {
     margin: 0;
     font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;    
-    color: #ff0000;
+    color: $red;
     font-size: 38px;
 }
 
 .indexspecialogprice {
     text-decoration: line-through;
-    text-decoration-color: #ffffff;
+    text-decoration-color: $white;
     text-decoration-style: double;
-    color: #f1f1f1;
+    color: $whitegrey;
 }
 
 .indexmainimageshowbox {
-    // background-color: forestgreen;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     display: grid;
@@ -222,11 +223,13 @@ main {
 .indexmainimageshow {
     width: 750px;
     height: 300px;
-    background-color: #fff;
+    background-color: $white;
+    background-image: url("./../img/index_main_show.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .indexmainopentimesbox {
-    // background-color: crimson;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: grid;
@@ -237,7 +240,6 @@ main {
 .indexmainopentimescontainer {
     width: 250px;
     height: 250px;
-    // background-color: #567352;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -252,7 +254,7 @@ main {
 
 .indexopentimesheadline {
     margin: 0;
-    color: #f1f1f1;
+    color: $whitegrey;
     font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
     font-style: italic;
     font-size: 42px;
@@ -262,7 +264,6 @@ main {
 .indexopentimesdaysbox {
     grid-column: 1 / 2;
     grid-row: 2 / 4;
-    // background-color: #163846;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -278,14 +279,14 @@ main {
 }
 
 .indexopentimesdays {
-    color: #ffc107;
+    color: $orange;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .indexopentimesdaysspecial {
-    color: #f1f1f1;
+    color: $whitegrey;
 }
 
 .indexopentimesnumberbox {
@@ -298,7 +299,7 @@ main {
 .indexopentimesnumberparagraph {
     margin: 0;
     font-size: 16px;
-    color: #ffc107;
+    color: $orange;
     text-align: center;
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 100;
@@ -306,7 +307,6 @@ main {
 }
 
 .indexmainreviewsbox {
-    // background-color: darkturquoise;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
     display: grid;
@@ -317,11 +317,10 @@ main {
 .indexreviewbox {
     margin: 5px 0px;
     max-width: 750px;
-    // background-color: #fff;
 }
 
 .indexreview {
-    color: #f1f1f1;
+    color: $whitegrey;
     margin: 0;
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
@@ -357,7 +356,7 @@ main {
 .menuitembox {
     width: 60vw;
     height: 250px;
-    background-color: #f1f1f1;
+    background-color: $whitegrey;
     box-shadow: 5px 5px 10px #00000059;
     display: grid;
     margin: 50px 0px;
@@ -391,7 +390,7 @@ main {
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    // animation: pizzaRotate 5s linear infinite;
+    // animation: pizzaRotate 15s linear infinite;
 }
 
 .menuitempricebox {
@@ -417,8 +416,7 @@ main {
 }
 
 .menuitemprice .specialpriceactiv {
-    color: #ffc107;
-    // color: #ff0000;
+    color: $orange;
 }
 
 .menuiteminfobox {
@@ -474,7 +472,7 @@ main {
 .menuiteminfoadd {
     background-color: $black;
     padding: 10px 50px;
-    color: #ffffff;
+    color: $white;
     border: 0;
     cursor: pointer;
     text-transform: uppercase;
@@ -483,7 +481,7 @@ main {
 }
 
 .menuiteminfoadd:hover {
-    color: #ffc107;
+    color: $orange;
 }
 
 /* CONTACT FILE CSS PROPERTIES */
@@ -537,7 +535,7 @@ main {
 }
 
 .contactspecialcolor {
-    color: #ffc107;
+    color: $orange;
     font-weight: 600;
 }
 
@@ -579,13 +577,13 @@ main {
 }
 
 .contactcontentspecial {
-    color: #ffc107;
+    color: $orange;
     font-weight: 600;
 }
 
 .contactopentimeday {
     margin: 0;
-    color: #ffc107;
+    color: $orange;
     margin: 5px 0px;
 }
 
@@ -605,17 +603,14 @@ main {
 .contactgooglemap {
     width: 400px;
     height: 600px;
-    // border: 10px solid #ffc107;
-    // border: 10px solid $black;
     border-radius: 25px;
 }
 
 /* STAFF FILE CSS PROPERTIES */
-/* sTAFF FILE CSS PROPERTIES */
+/* STAFF MAIN CSS PROPERTIES */
 
 .staffmainclass {
-    // background-color: #ffffff;
-    background-color: #f1f1f1;
+    background-color: $whitegrey;
 }
 
 .staffmaincontainer {
@@ -623,7 +618,6 @@ main {
     height: auto;
     min-height: inherit;
     display: flex;
-    // justify-content: left;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -636,7 +630,6 @@ main {
     margin: 15px;
     opacity: 0.45;
     transition: opacity 0.75s linear;
-    // cursor: pointer;
 }
 
 .staffitembox:hover {
@@ -666,8 +659,7 @@ main {
     margin-top: 20px;
     width: 245px;
     height: 350px;
-    background-color: #ffffff;
-    // background-color: #f1f1f1;
+    background-color: $white;
     margin-right: 0px;
     box-shadow: 5px 5px 10px #00000059;
     border-radius: 25px;
@@ -699,7 +691,6 @@ main {
 .staffiteminfonavbox {
     grid-column: 1 / 2;
     grid-row: 2 / 4;
-    // background-color: #848092;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -734,7 +725,6 @@ main {
 .staffiteminfoinfobox {
     grid-column: 1 / 2;
     grid-row: 4 / 9;
-    // background-color: #173592;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -748,7 +738,6 @@ main {
 .staffiteminfoquotebox {
     grid-column: 1 / 2;
     grid-row: 9 / 11;
-    // background-color: #547245;
     padding: 0px 10px;
     display: grid;
     align-content: center;
@@ -795,8 +784,7 @@ main {
     margin: 0; 
     font-family: 'Tangerine', 'Sacramento', 'Bungee', 'Open Sans', cursive, sans-serif;
     font-size: 200px;
-    // color: #ffffff;
-    color: #ffc107;
+    color: $orange;
     text-shadow: 5px 5px 10px #00000059;
     margin-bottom: 50px;
 }
@@ -821,7 +809,7 @@ main {
     text-decoration: none;
     cursor: pointer;
     transition: all 1s ease-in;
-    color: #ffffff;
+    color: $white;
 }
 
 .cartoverlaynavigationitem {
@@ -829,13 +817,13 @@ main {
     text-transform: uppercase;
     margin: 0;
     font-size: 24px;
-    color: #ffffff;
+    color: $white;
     padding: 0px 15px;
     cursor: pointer;
 }
 
 .cartoverlaynavigationitem:hover {
-    color: #ffc107;
+    color: $orange;
 }
 
 /* CART MAIN ELEMENT CSS PROPERTIES */
@@ -854,7 +842,7 @@ main {
     width: 80vw;
     height: 225px;
     margin: 20px 0px;
-    background-color: #f1f1f1;
+    background-color: $whitegrey;
     box-shadow: 5px 5px 10px #00000059;
     display: grid;
     grid-template-rows: 1fr;
@@ -877,7 +865,6 @@ main {
     max-height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    // animation: pizzaRotate 5s linear infinite;
 }
 
 .cartiteminfobox {
@@ -946,7 +933,7 @@ main {
     color: #00000059;
     font-size: 24px;
     font-family: 'Bungee', sans-serif;
-    text-shadow: 2px 2px #ffffff;
+    text-shadow: 2px 2px $white;
 }
 
 .cartitemtotalbox {
@@ -962,7 +949,7 @@ main {
     color: $black;
     font-size: 24px;
     font-family: 'Bungee', sans-serif;
-    text-shadow: 2px 2px #ffffff;
+    text-shadow: 2px 2px $white;
 }
 
 .cartitemremovebox {
@@ -975,10 +962,10 @@ main {
 
 .cartitemremove {
     margin: 0;
-    color: #ffc107;
+    color: $orange;
     font-size: 32px;
     font-family: 'Bungee', 'Open Sans', sans-serif;
-    text-shadow: 2px 2px #ffffff;
+    text-shadow: 2px 2px $white;
 }
 
 .cartfinalcontainer {
@@ -991,7 +978,7 @@ main {
 .cartfinalbox {
     width: 400px;
     height: 100%;
-    background-color: #f1f1f1;
+    background-color: $whitegrey;
     box-shadow: 5px 5px 10px #00000059;
     display: grid;
     grid-template-columns: 1fr;
@@ -1015,7 +1002,7 @@ main {
     color: $black;
     font-size: 22px;
     font-family: 'Bungee', sans-serif;
-    text-shadow: 2px 2px #ffffff;
+    text-shadow: 2px 2px $white;
 }
 
 .cartfinaltoorderbox {
@@ -1025,8 +1012,8 @@ main {
 .cartfinaltoorder {
     margin: 0;
     background-color: $black;
-    border: 2px solid #ffc107;
-    color: #ffffff;
+    border: 2px solid $orange;
+    color: $white;
     font-family: 'Open sans', sans-serif;
     padding: 5px 30px;
     font-size: 22px;

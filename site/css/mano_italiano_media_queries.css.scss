@@ -66,7 +66,7 @@
         grid-template-columns: repeat(5, 1fr);
         min-height: 67px;
         height: auto;
-        border-bottom: 2px solid #ffc107;
+        border-bottom: 2px solid $orange;
     }
 
     .headerhamburgertogglemenu{
@@ -95,7 +95,7 @@
         width: 100%;
         grid-column: 1 / 6;
         grid-row: auto;
-        border-top: 2px solid #ffc107;
+        border-top: 2px solid $orange;
     }
 
     .navlistitem {
@@ -287,7 +287,7 @@
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         height: auto;
-        border-top: 1px solid #ffc107;
+        border-top: 1px solid $orange;
     }
 
     .indexmainreviewsbox {
@@ -295,7 +295,7 @@
         width: 100%;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
-        border-top: 1px solid #ffc107;
+        border-top: 1px solid $orange;
     }
 
     .indexreviewbox {
@@ -317,7 +317,7 @@
     }
 
     .contactmainmapbox {
-        border-top: 1px solid #000000;
+        border-top: 1px solid $black;
     }
 
     .contactgooglemap {
@@ -326,7 +326,7 @@
     }
 
     .contactmainopentimesadressbox {
-        border-top: 1px solid #000000;
+        border-top: 1px solid $black;
     }
 
     .contactopentimesadresscontainer {
