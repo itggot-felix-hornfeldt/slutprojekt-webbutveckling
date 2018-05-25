@@ -23,7 +23,7 @@
             end
         %>
         <p class="contactinquirycontent"><%=content_inquiry[0]%></p>
-        <p class="contactinquiryinfo"><a class="contactspecialcolor">Kontakt: </a><%=contact_name[i]%><br><a class="contactspecialcolor">Mail: </a><a href="mailto:<%=mail_name[i]%>@lamanoitaliano.se?Subject=<%=mail_subject[i]%>"><%=mail_name[i]%>@lamanoitaliano.se</a><br><a class="contactspecialcolor">Mobil: </a><%=phone_number[i]%></p>
+        <p class="contactinquiryinfo"><a class="contactspecialcolor">Kontakt: </a><%=contact_name[i]%><br><a class="contactspecialcolor">Mail: </a><a class="contactmail" href="mailto:<%=mail_name[i]%>@lamanoitaliano.se?Subject=<%=mail_subject[i]%>"><%=mail_name[i]%>@lamanoitaliano.se</a><br><a class="contactspecialcolor">Mobil: </a><%=phone_number[i]%></p>
     </div>
 <%
         i += 1
