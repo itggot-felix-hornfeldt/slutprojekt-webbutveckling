@@ -57,8 +57,8 @@ i.fa-bars {
 /* WHEN HAMBURGER MENU IS TOOGLED */
 
 .hamburgeractive {
-    border-color: #ffffff !important;
-    color: #ffc107 !important;
+    border-color: $white !important;
+    color: $orange !important;
 }
 
 /* HEADER LOGO CSS PROPERTIES */
@@ -499,7 +499,6 @@ main {
 .contactmaincontactinfobox {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    // background-color: #960382;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -542,7 +541,6 @@ main {
 .contactmainopentimesadressbox {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    // background-color: #495882;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -552,7 +550,6 @@ main {
     width: 450px;
     height: auto;
     margin: 10px 0px;
-    // background-color: #578380;
 }
 
 .contactopentimesbox,
@@ -579,6 +576,12 @@ main {
 .contactcontentspecial {
     color: $orange;
     font-weight: 600;
+}
+
+.contactmail {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
 }
 
 .contactopentimeday {
@@ -718,7 +721,7 @@ main {
 }
 
 .staffitemnavconf {
-    color: #ffc107 !important;
+    color: $orange !important;
     font-style: italic !important;
 }
 
